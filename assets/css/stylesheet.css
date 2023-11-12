@@ -163,3 +163,85 @@ footer ul {
         width: 90%;
     }
 }
+
+/*Support Page*/
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.article {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.article h2 {
+    text-align: center;
+    color: #333;
+}
+
+.article p {
+    font-size: 14px;
+    color: #555;
+}
+
+.read-more {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .article {
+        width: 90%;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 800px;
+    margin: 10% auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Adjustments for mobile */
+@media (max-width: 768px) {
+    .article {
+        width: 90%;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
